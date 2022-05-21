@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Xem phim Online</title>
+        <link rel="shortcut icon" href="./img/logohead.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script language="javascript" src="javascrip.js"></script>
+    </head>
+    <body >
+        <div class="r">
+            <div id="header">
+                <div id="logo">
+                    <img class="logo" src="img/155047773_1001040140299761_5837584911292392328_n.jpg" alt="Phê phim">
+                </div>
+                <div id="search">
+                    <input id="textbox" type="text" placeholder="Nhập tên phim cần tìm..." >
+                </div>
+                <div>
+                    <button id="btnsearch">Tìm</button>
+                </div>
+                <div id="user">
+                    <ul class="menulog">
+                        <li><a href="./index/login.html">Đăng nhập</a></li>
+                        <li><a href="#">Đăng ký</a></li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="mainmenus">
+                <ul class="mainmenu">
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Phim đang chiếu</a></li>
+                    <li class="sub">
+                        <a href="#" >Quốc gia </a>
+                        <ul class="chi-menu subcontent">
+                            <li><a href="index.html">Việt Nam</a></li>
+                            <li><a href="">Hoa Kỳ</a></li>
+                            <li><a href="">Hàn Quốc</a></li>
+                            <li><a href="">Anh</a></li>
+                            <li><a href="">Trung Quốc</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub">
+                        <a href="#">Thể loại</a>
+                        <ul class="chi-menu subcontent">
+                            <li><a href="">Chiếu rạp</a></li>
+                            <li><a href="">Phim bộ</a></li>
+                            <li><a href="">Phim lẻ</a></li>
+                            <li><a href="">Hài kịch</a></li>
+                            <li><a href="">Trinh Thám</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Phim bộ</a></li>
+                    <li><a href="#">Phim lẻ</a></li>
+                </ul>
+            </nav>
+            <section class="carosli w90">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+                    <div class="carousel-inner w100">
+                    <div class="carousel-item active">
+                        <img class="w100" src="./carousel/poster-phim3.jpg" alt="poster1">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w100" src="./carousel/thiet-ke-poster-phim-01.jpg" alt="poster2">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w100" src="./carousel/poster-phim.jpg" alt="poster3">
+                    </div>
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </section>
+            <div>
+                <img id="gototop" src="./img/gototop.png" alt="">
+            </div>
+            <div class="container">
+                <h1>Phim chiếu rạp Việt Nam</h1>
+                <div class="thung">
+                    <div class="next next1">
+                        <img src="./img/next.png" alt="next">
+                    </div>
+                    <div class="prev prev1">
+                        <img src="./img/prev.png" alt="next">
+                    </div>
+                    <div class="list list1">
+                        <div class="category-content">
+                            <div>
+                                <img src="img/Phim_viet/changtrainamay.png" alt="poster1">
+                            </div>
+                            <span class="namefilm">Chàng trai năm ấy</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/Phim_viet/anhtraiyeuquai.png" alt="poster2">
+                            </div>
+                            <span class="namefilm">Anh trai yêu quái</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/Phim_viet/chitrolycuaanh.jpg" alt="poster3">
+                            </div>
+                            <span class="namefilm">Chị trợ lý của anh</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/Phim_viet/co3sg.jpg" alt="poster4">
+                            </div>
+                            <span class="namefilm">Cô ba Sài Gòn</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/Phim_viet/cualaivobau.jpg" alt="poster5">
+                            </div>
+                            <span class="namefilm">Cua lại vợ bầu</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/Phim_viet/doimatamduong.jpg" alt="poster6">
+                            </div>
+                            <span class="namefilm">Đôi mắt âm dương</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/Phim_viet/emchua18.jpg" alt="poster7">
+                            </div>
+                            <span class="namefilm">Em chưa 18</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/Phim_viet/emlabanoicuaanh.jpg" alt="poster8">
+                            </div>
+                            <span class="namefilm">Em là bà nội của anh</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/Phim_viet/haiphuong.jpg" alt="poster8">
+                            </div>
+                            <span class="namefilm">Hai Phượng</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/Phim_viet/hanhphuccuame.jpg" alt="poster9">
+                            </div>
+                            <span class="namefilm">Hạnh phúc của mẹ</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/Phim_viet/hoandoi.jpg" alt="poster10">
+                            </div>
+                            <span class="namefilm">Hoán đổi</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/Phim_viet/honpapadacongai.jpg" alt="poster11">
+                            </div>
+                            <span class="namefilm">Hồn pa pa da hàng thịt</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/Phim_viet/kehoachdoichong.jpg" alt="poster12">
+                            </div>
+                            <span class="namefilm">Kế hoạch đổi chồng</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/Phim_viet/matbiec.jpg" alt="poster13">
+                            </div>
+                            <span class="namefilm">Mắt biếc</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/Phim_viet/muaviettinhca.jpg" alt="poster14">
+                            </div>
+                            <span class="namefilm">Mùa viết tình ca</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/Phim_viet/sieusaosieungo.jpg" alt="poster15">
+                            </div>
+                            <span class="namefilm">Siêu sao siêu ngố</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/Phim_viet/tamcam.jpg" alt="poster16">
+                            </div>
+                            <span class="namefilm">Tấm cám</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/Phim_viet/trangquynh.jpg" alt="poster17">
+                            </div>
+                            <span class="namefilm">Trạng Quỳnh</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h1>Cartoon</h1>
+                <div class="thung">
+                    <div class="next next2">
+                        <img src="./img/next.png" alt="next">
+                    </div>
+                    <div class="prev prev2">
+                        <img src="./img/prev.png" alt="next">
+                    </div>
+                    <div class="list list2">
+                        <div class="category-content">
+                            <div>
+                                <img src="img/cartoon/aventure_time.jpg" alt="poster1">
+                            </div>
+                            <span class="namefilm">Aventure Time</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/cartoon/Bayala_ A_Magical_Adventure.jpg" alt="poster2">
+                            </div>
+                            <span class="namefilm">Bayala A Magical Adventure</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/cartoon/beavis_&_butthead.jpg" alt="poster3">
+                            </div>
+                            <span class="namefilm">Beavis & Butthead</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/cartoon/Elcano _&_Magellan_ The_First_Voyage_Around_the_World.jpg" alt="poster4">
+                            </div>
+                            <span class="namefilm">Elcano & Magellan</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/cartoon/Hello_Kitty.jpg" alt="poster5">
+                            </div>
+                            <span class="namefilm">Hello Kitty</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/cartoon/leo_da_vinci.jpg" alt="poster6">
+                            </div>
+                            <span class="namefilm">Leo Da Vinci</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/cartoon/lion_king.jpg" alt="poster7">
+                            </div>
+                            <span class="namefilm">Lion King</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/cartoon/Mordercai_&_Rigby.jpg" alt="poster8">
+                            </div>
+                            <span class="namefilm">Mordercai & Rigby</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/cartoon/muppet_treasure_island.jpg" alt="poster8">
+                            </div>
+                            <span class="namefilm">Muppet Treasure Island</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/cartoon/my_little_pony.jpg" alt="poster9">
+                            </div>
+                            <span class="namefilm">My Little Pony</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/cartoon/Powerpuff_Girls.jpg" alt="poster10">
+                            </div>
+                            <span class="namefilm">Powerpuff Girls</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/cartoon/Regular_show.jpg" alt="poster11">
+                            </div>
+                            <span class="namefilm">Regular show</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/cartoon/Ren_&_Stimpy.jpg" alt="poster12">
+                            </div>
+                            <span class="namefilm">Ren & Stimpy</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/cartoon/Sleeping_Beauty.jpg" alt="poster13">
+                            </div>
+                            <span class="namefilm">Sleeping Beauty</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/cartoon/South_Park.jpg" alt="poster14">
+                            </div>
+                            <span class="namefilm">South Park</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/cartoon/the_lorax.jpg" alt="poster15">
+                            </div>
+                            <span class="namefilm">The Lorax</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/cartoon/the_muppet_show.jpg" alt="poster16">
+                            </div>
+                            <span class="namefilm">The Muppet Show</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/cartoon/the_phenomenal_miss_piggy.jpg" alt="poster17">
+                            </div>
+                            <span class="namefilm">The Phenomenal Miss Piggy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h1>Anime</h1>
+                <div class="thung">
+                    <div class="next next3">
+                        <img src="./img/next.png" alt="next">
+                    </div>
+                    <div class="prev prev3">
+                        <img src="./img/prev.png" alt="prev">
+                    </div>
+                    <div class="list list3">
+                        <div class="category-content">
+                            <div>
+                                <img src="img/anime/7_days_war.jpg" alt="poster1">
+                            </div>
+                            <span class="namefilm">Seven Days War</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/anime/Asura.jpg" alt="poster2">
+                            </div>
+                            <span class="namefilm">Asura</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/anime/Attack_On_Titan.jpg" alt="poster3">
+                            </div>
+                            <span class="namefilm">Attack On Titan</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/anime/Cach_biet_toi_va_em.jpg" alt="poster4">
+                            </div>
+                            <span class="namefilm">Cách biệt tôi và em</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/anime/Co_dau_cua_phap_su.jpg" alt="poster5">
+                            </div>
+                            <span class="namefilm">Cô dâu của pháp sư</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/anime/dich_vu_giao_hang_cua_phu_thuy_kiki.jpg" alt="poster6">
+                            </div>
+                            <span class="namefilm">Dịch vụ giao hàng của phù thủy Kiki</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/anime/dua_con_cua_thoi_tiet.jpg" alt="poster7">
+                            </div>
+                            <span class="namefilm">Đứa con của thời tiết</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/anime/Hello_World.png" alt="poster8">
+                            </div>
+                            <span class="namefilm">Hello World</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/anime/Josee_khi_nang_tho_yeu.jpg" alt="poster8">
+                            </div>
+                            <span class="namefilm">Josee: Khi nàng thơ yêu</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/anime/lau_dai_bay_cua_phap_su_howl.jpg" alt="poster9">
+                            </div>
+                            <span class="namefilm">Lâu đài bay của Howl</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/anime/my_neighbor_Seki.jpg" alt="poster10">
+                            </div>
+                            <span class="namefilm">My Neighbor Seki</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/anime/mirai_em_gai_den_tu_tuong_lai.jpg" alt="poster11">
+                            </div>
+                            <span class="namefilm">Mirai: Em gái đến từ tương lai</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/anime/remember.jpg" alt="poster12">
+                            </div>
+                            <span class="namefilm">Remember</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/anime/revisions.jpg" alt="poster13">
+                            </div>
+                            <span class="namefilm">Revisions</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/anime/Ronja_the_Robber's_Daughter.jpg" alt="poster14">
+                            </div>
+                            <span class="namefilm">Ronia, the Robber's Daughter</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/anime/sen_&_chihiro_o_the_gioi_than_bi.png" alt="poster15">
+                            </div>
+                            <span class="namefilm">Vùng Đất Linh Hồn</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h1>Phim siêu anh hùng</h1>
+                <div class="thung">
+                    <div class="next next4">
+                        <img src="./img/next.png" alt="next">
+                    </div>
+                    <div class="prev prev4">
+                        <img src="./img/prev.png" alt="next">
+                    </div>
+                    <div class="list list4">
+                        <div class="category-content">
+                            <div>
+                                <img src="img/Phim_sieu_anh_hung/A_age_of_ultron.jpg" alt="poster1">
+                            </div>
+                            <span class="namefilm">Avengers: Age of Ultron</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/Phim_sieu_anh_hung/A_endgame.jpg" alt="poster2">
+                            </div>
+                            <span class="namefilm">Avengers: Endgame</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/Phim_sieu_anh_hung/Avenger_Assemble.jpg" alt="poster3">
+                            </div>
+                            <span class="namefilm">Avengers Assemble</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/Phim_sieu_anh_hung/CA_civil_war.jpg" alt="poster4">
+                            </div>
+                            <span class="namefilm">Captain America: Civil War</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/Phim_sieu_anh_hung/CA_the_first_avenger.jpg" alt="poster5">
+                            </div>
+                            <span class="namefilm">Captain America : The First Avenger</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/Phim_sieu_anh_hung/CA_the_winter_soilder.jpg" alt="poster6">
+                            </div>
+                            <span class="namefilm">Captain America: The Winter Soldier</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/Phim_sieu_anh_hung/captian_marvel.jpg" alt="poster7">
+                            </div>
+                            <span class="namefilm">Captian Marvel</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/Phim_sieu_anh_hung/Doctor_Strange.jpg" alt="poster8">
+                            </div>
+                            <span class="namefilm">Doctor Strange</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/Phim_sieu_anh_hung/DS_mulitiver_madness.jpg" alt="poster8">
+                            </div>
+                            <span class="namefilm">Doctor Strange in the Multiverse of Madness</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/Phim_sieu_anh_hung/Far From Home.jpg" alt="poster9">
+                            </div>
+                            <span class="namefilm">Spider-Man: Far From Home</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/Phim_sieu_anh_hung/iron_man.jpg" alt="poster10">
+                            </div>
+                            <span class="namefilm">Iron man</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/Phim_sieu_anh_hung/Iron_Man_2.jpg" alt="poster11">
+                            </div>
+                            <span class="namefilm">Iron man 2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h1>Phim tình cảm Hàn Quốc</h1>
+                <div class="thung">
+                    <div class="next next5">
+                        <img src="./img/next.png" alt="next">
+                    </div>
+                    <div class="prev prev5">
+                        <img src="./img/prev.png" alt="next">
+                    </div>
+                    <div class="list list5">
+                        <div class="category-content">
+                            <div>
+                                <img src="img/K-Drama/boy_over_flower.jpg" alt="poster1">
+                            </div>
+                            <span class="namefilm">Boy Over Flower</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/K-Drama/crash_landing_on_you.png" alt="poster2">
+                            </div>
+                            <span class="namefilm">Crash Landing on You</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/K-Drama/Descendants_of_the_Sun.jpg" alt="poster3">
+                            </div>
+                            <span class="namefilm">Descendants of the Sun</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/K-Drama/doctor_romantic.jpg" alt="poster4">
+                            </div>
+                            <span class="namefilm">Doctor Romantic</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/K-Drama/guardian.jpg" alt="poster5">
+                            </div>
+                            <span class="namefilm">Guardian</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/K-Drama/hospital_playlist.jpg" alt="poster6">
+                            </div>
+                            <span class="namefilm">Hospital Playlist</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/K-Drama/hotel_Del_luna.jpg" alt="poster7">
+                            </div>
+                            <span class="namefilm">Hotel Del Luna</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/K-Drama/it's_okay_to_not_be_okay.jpg" alt="poster8">
+                            </div>
+                            <span class="namefilm">It's Okay to Not Be Okay</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/K-Drama/itaewon_class.jpg" alt="poster8">
+                            </div>
+                            <span class="namefilm">Itaewon class</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/K-Drama/love_alarm.jpg" alt="poster9">
+                            </div>
+                            <span class="namefilm">Love Alarm</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/K-Drama/my_love_from_the_star.jpg" alt="poster10">
+                            </div>
+                            <span class="namefilm">My Love From the Star</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/K-Drama/nevertheless.jpg" alt="poster11">
+                            </div>
+                            <span class="namefilm">Nevertheless</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/K-Drama/pinocchio.jpg" alt="poster12">
+                            </div>
+                            <span class="namefilm">Pinocchio</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/K-Drama/something_in_the_rain.jpg" alt="poster13">
+                            </div>
+                            <span class="namefilm">Something in the Rain</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h1>Phim kinh dị</h1>
+                <div class="thung">
+                    <div class="list list6">
+                        <div class="category-content">
+                            <div>
+                                <img src="img/phim_kinh_di/a_quiet_place.jpg" alt="poster1">
+                            </div>
+                            <span class="namefilm">A Quiet Place</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/phim_kinh_di/a_quiet_place_2.jpg" alt="poster2">
+                            </div>
+                            <span class="namefilm">A Quiet Place 2</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/phim_kinh_di/alive.jpg" alt="poster3">
+                            </div>
+                            <span class="namefilm">Alive</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/phim_kinh_di/bird_box.jpg" alt="poster4">
+                            </div>
+                            <span class="namefilm">Bird Box</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/phim_kinh_di/cabin_in_the_wood.jpg" alt="poster5">
+                            </div>
+                            <span class="namefilm">The Cabin in the Woods</span>
+                        </div>
+                        <div class="category-content">
+                            <div>
+                                <img src="img/phim_kinh_di/Friday_the_13th_chap1.jpg" alt="poster6">
+                            </div>
+                            <span class="namefilm">Friday the 13th Part 1</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mode-light">
+                <div id="box">
+                    <input type="checkbox" id="light-dark">
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="foot">
+            <div class="imglogo"></div>
+            <div class="footinfo">
+                <div class="menuinfo">
+                    <ul>
+                        <li>Quảng cáo</li>
+                        <li>Điều khoản</li>
+                        <li>Chính sách</li>
+                        <li>Liên hệ</li>
+                        <li>Hỗ trợ</li>
+                        <li><img src="./img/browser.png" alt="logobrowser"></li>
+                        <li><img src="./img/smarttv.png" alt="logobrowser"></li>
+                        <li><img src="./img/apple.png" alt="logobrowser"></li>
+                        <li><img src="./img/android.png" alt="logobrowser"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="fb"><img src="./img/icon-fb.png" alt="fb"></div>
+                <div>
+                    <span>Hỗ trợ</span>
+                </div>
+                <div>
+                    <span>SĐT: 0123456789</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</html>
